@@ -1,0 +1,278 @@
+:root {
+    /* light mode */
+    --primary-font: "Poppins", sans-serif; 
+    --primary-bg-color: #ffffff;
+    --primary-text-color: #000;
+    --secondary-bg-color: #575757;
+    --btn-bg-color: #2196f3;
+    --cta-hover-color: #167bce;
+    --btn-bg-light: #eeeeee;
+    /* dark mode */ 
+    --dark-primary-bg-color: #222;
+    --dark-primary-text-color: #ffffff;
+    --dark-secondary-bg-color: #828282;
+    --dark-btn-bg-color: #1e88e5;
+    --dark-cta-hover-color: #0d5e8c;
+    --dark-btn-bg-light: #eeeeee;
+}
+
+.dark-theme { 
+    --primary-bg-color: var(--dark-primary-bg-color);
+    --primary-text-color: var(--dark-primary-text-color);
+    --secondary-bg-color: var(--dark-secondary-bg-color);
+    --btn-bg-color: var(--dark-btn-bg-color);
+    --cta-hover-color: var(--dark-cta-hover-color);
+    --btn-bg-light: var(--dark-btn-bg-light);
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-bg-color);
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+}
+
+.theme__btn {
+    position: relative;
+    left: 8.5rem;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    cursor: default;
+}
+
+article, footer, .hero, .logo__container, .experience, .cta, .portfolio__skills, .btn__bg, .portfolio, .skills {
+    display: flex;
+}
+
+.hero, .portfolio, .skills {
+    flex-direction: column;
+}
+
+.hero, .btn__bg, .portfolio, .skills {
+    align-items: center;
+}
+
+.theme__btn, .logo__container a, .logo__container img {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.hero, .experience, .wrapper {
+    text-align: center;
+}
+
+.article, .hero, .logo__container, .portfolio, .skills {
+    gap: 1rem;
+}
+
+.hero__pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner__circle {
+    content: "";
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    bottom: 0.1rem;
+    right: 0.1rem;
+    border-radius: 50%;
+    border: 0.18rem solid vara(--primary-bg-color);
+    z-index: 2;
+}
+
+.hero__pic img, .wrapper img {
+    width: 100%;
+}
+
+.hero__pic img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero__info h1, h2 {
+    font-weight: 400;
+}
+
+article p, .hero__info h2 {
+    color: var(--secondary-bg-color);
+}
+
+.hero__info h2 {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.footer, .logo__container, .portfolio__skills, .cta, .experience, .btn__bg {
+    justify-content: center;
+}
+
+.theme__btn, .logo__container a, .logo__container img {
+    height: 1.5rem;
+}
+
+.experience {
+    margin: auto;
+    margin-top: 1.4rem;
+    max-width: 20rem;
+}
+
+.experience b {
+    font-weight: 500;
+}
+
+.experience h2 {
+    font-weight: 300;
+    width: 30%;
+    font-size: 0.9rem;
+}
+
+.cta {
+    margin-top: 1.2rem;
+}
+
+.cta, .btn__bg {
+    gap: 2rem;
+}
+
+.btn, .btn__2, .btn__bg {
+    border-radius: 0.7rem;
+    border: none;
+}
+
+.btn, .btn__2, .btn__bg, .wrapper h3 {
+    font-weight: 600;
+}
+
+.btn, .btn__2, .btn__bg, .wrapper, .project__wrapper {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease-in-out;
+
+}
+
+.download__btn:hover {
+    background-color: var(--cta-hover-color);
+}
+
+.theme__btn, .download__btn:hover, .contact__btn:hover, .btn__2:hover, .wrapper img:hover {
+    cursor: pointer;
+}
+.btn:hover, .btn__2:hover, .logo__container a:hover, .project__wrapper:hover {
+    transform: scale(0.98);
+}
+
+.btn:active, .btn__2:active, .project__wrapper:active, .logo__container a:active {
+    transform: scale(1);
+}
+
+.contact__btn:hover, .download__btn {
+    background-color: var(--btn-bg-color);
+    color: white;
+}
+
+.contact__btn:hover {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn__2:hover, .active__btn {
+    background-color: white;
+}
+
+.btn, .btn__2 {
+    height: 3rem;
+}
+
+.btn {
+    width: 9rem;
+}
+
+.btn__2 {
+    width: 8.5rem;
+}
+
+.download__btn {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.portfolio__skills {
+    height: 4rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.btn__bg, .wrapper {
+    width: 20rem;
+}
+
+article p, .btn__bg {
+    background-color: var(--btn-bg-light);
+    margin-top: 1rem;
+}
+
+.hero, .portfolio, .skills {
+    margin-top: 2rem;
+}
+
+.skills {
+    display: none; 
+}
+
+.wrapper img {
+    border-radius: 1rem;
+}
+
+article, .wrapper h3 {
+    margin-bottom: 1.5rem;
+}
+
+article {
+    flex-wrap: wrap;
+}
+
+article p {
+    border-radius: 0.5rem;
+    flex-grow: 20;
+    padding: 1rem;
+}
+
+footer {
+    margin: 3rem 0;
+}
+
+@media screen and (min-width: 900px) {
+    .skills, .portfolio {
+        flex-direction: row;
+        width: 45rem;
+    }
+
+    .skills {
+        margin: 2rem auto 0;
+        justify-content: center;
+    }
+
+    .portfolio {
+        margin: 2rem auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .wrapper {
+        width: calc(48%);
+        flex: none;
+    }
+}
+
+.backend__skills, .frontend__skills {
+    gap: 10px;
+}
+
+.logo__container {
+    padding: .5rem;
+    margin-right: 1rem;
+}
