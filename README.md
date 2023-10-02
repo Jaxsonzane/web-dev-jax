@@ -1,3 +1,3 @@
 # web-dev-jax
-# web-dev-jax
-# web-dev-jax
+
+Website for Jaxcode.io. Looking for Freelance work. 
