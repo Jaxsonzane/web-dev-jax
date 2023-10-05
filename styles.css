@@ -6,7 +6,7 @@
     --secondary-bg-color: #575757;
     --btn-bg-color: #2196f3;
     --cta-hover-color: #167bce;
-    --btn-bg-light: #eeeeee;
+    --btn-bg-light: #ececec;
     /* dark mode */ 
     --dark-primary-bg-color: #222;
     --dark-primary-text-color: #ffffff;
@@ -181,7 +181,8 @@ article p, .hero__info h2 {
 }
 
 .btn__2:hover, .active__btn {
-    background-color: white;
+    background-color: #f38525;
+    color: white;
 }
 
 .btn, .btn__2 {
@@ -193,7 +194,7 @@ article p, .hero__info h2 {
 }
 
 .btn__2 {
-    width: 8.5rem;
+    width: 9rem;
 }
 
 .download__btn {
@@ -274,5 +275,5 @@ footer {
 
 .logo__container {
     padding: .5rem;
-    margin-right: 1rem;
+    
 }
